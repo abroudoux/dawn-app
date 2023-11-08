@@ -1,7 +1,7 @@
 import React from 'react';
 
-import HelloWorld from '../components/HelloWorld';
-
+import HeaderHome from '../components/Header/HeaderHome';
+import Fav from '../components/Fav/Fav';
 
 export default function Home() {
 
@@ -9,8 +9,8 @@ export default function Home() {
 
 		<section>
 
-			<h1>Home</h1>
-			<HelloWorld />
+			<HeaderHome/>
+			<Fav/>
 
 		</section>
   	)
