@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 type NavLinkProps = {
     path : string;
     title : string;
-    icon ? : string;
+    icon ? : any;
 };
 
 const NavLinks : FC<NavLinkProps> = ( props ) => {
@@ -15,10 +15,10 @@ const NavLinks : FC<NavLinkProps> = ( props ) => {
 
     return (
 
-        <li className={`text-4xl px-6 py-4 text-white ${location.pathname === props.path ? "active" : ""}`}>
-            <Link to={ props.path }>
-                <FontAwesomeIcon icon={ props.icon } />
-                { props.title }
+        <li className={`px-12 py-3 text-white ${location.pathname === props.path ? "active" : ""}`}>
+            <Link to={ props.path } className="flex-col-center-center gap-2">
+                <FontAwesomeIcon icon={ props.icon } className="text-xl" />
+                <p className="text-sm font-light">{ props.title }</p>
             </Link>
         </li>
 

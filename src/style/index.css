@@ -33,7 +33,11 @@ body::-webkit-scrollbar {
 }
 
 .title {
-    font-family: 'Montserrat Alternates', sans-serif;
+    @apply text-4xl font-semibold w-full
+}
+
+.page {
+    @apply p-4
 }
 
 .bubble {
@@ -52,6 +56,9 @@ body::-webkit-scrollbar {
 .border-gradient {
     background: -webkit-linear-gradient(var(--purple), var(--purple-light));
 }
+
+.background-gradient {
+    background: -webkit-linear-gradient(var(--purple), var(--purple-light));}
 
 .active {
     @apply flex-row-center bg-purple-borders text-white rounded-lg;
