@@ -12,7 +12,7 @@ export default function USer() {
             <h1 className="title">Votre compte</h1>
 
             <div className="flex-col-center-center py-12 gap-4">
-                <div className="w-auto h-auto flex-col-center rounded-full">
+                <div className="w-36 h-36 flex-col-center rounded-full">
                     <img src={antonio} alt="Antonio lpb" className="w-36 h-36 object-contain rounded-full bg-cover" />
                 </div>
                 <div className="flex-col-center-center">
@@ -25,7 +25,7 @@ export default function USer() {
                 <p className="font-normal text-2xl mb-4">Vos jeux préférés</p>
                 <ul className="flex-col-center-center gap-3">
                     <li className="hover:cursor-pointer flex-row-center-between w-full p-2 bg-purple-borders rounded-lg">
-                        Strip Poker
+                        Code Names
                         <FontAwesomeIcon icon={faChevronRight} />
                     </li>
                     <li className="hover:cursor-pointer flex-row-center-between w-full p-2 bg-purple-borders rounded-lg">

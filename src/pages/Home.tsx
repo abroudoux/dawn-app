@@ -1,4 +1,4 @@
-import Slider from "../components/Slider/Slider";
+import Carousel from "../components/Slider/Carousel";
 
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
 
 			<h1 className="title">Bonjour Antonio</h1>
 			<p className="font-light text-ms mb-5">Choisissez votre jeu</p>
-			<Slider />
+			<Carousel />
 
 		</section>
   	);

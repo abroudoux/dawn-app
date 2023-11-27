@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
@@ -9,7 +9,7 @@ import loupGarouLogo from "../../../public/assets/loupGarouLogo.png";
 import codeNamesLogo from "../../../public/assets/codeNamesLogo.png";
 
 
-export default function Slider() {
+export default function Carousel() {
 
     const slidesData = [
         {
@@ -44,7 +44,7 @@ export default function Slider() {
         const isLastSlide = currentIndex === slidesData.length - 1;
         const newIndex = isLastSlide ? 0 : currentIndex + 1;
         setCurrentIndex(newIndex);
-    }
+    };
 
     return (
         <section className="flex-col-center-center">
