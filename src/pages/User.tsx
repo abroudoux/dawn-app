@@ -17,7 +17,7 @@ export default function USer() {
                 </div>
                 <div className="flex-col-center-center">
                     <p className="text-2xl font-normal">Antonio Bertinau</p>
-                    <p className="text-base font-light">@groszgegdu49</p>
+                    <p className="text-base font-light">@chicagre</p>
                 </div>
             </div>
 

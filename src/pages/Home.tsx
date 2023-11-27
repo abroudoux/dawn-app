@@ -1,5 +1,5 @@
-import HeaderHome from '../components/Header/HeaderHome';
-import Fav from '../components/Fav/Fav';
+import Slider from "../components/Slider/Slider";
+
 
 export default function Home() {
 
@@ -7,10 +7,11 @@ export default function Home() {
 
 		<section className="page">
 
-			<HeaderHome/>
-			<Fav/>
+			<h1 className="title">Bonjour Antonio</h1>
+			<p className="font-light text-ms mb-5">Choisissez votre jeu</p>
+			<Slider />
 
 		</section>
-  	)
+  	);
 
-}
+};

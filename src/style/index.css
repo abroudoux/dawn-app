@@ -33,7 +33,7 @@ body::-webkit-scrollbar {
 }
 
 .title {
-    @apply text-4xl font-semibold w-full
+    @apply text-3xl font-semibold w-full mb-2
 }
 
 .page {
