@@ -19,13 +19,14 @@ export default function USer() {
                     <p className="text-2xl font-normal">Antonio Bertinau</p>
                     <p className="text-base font-light">@chicagre</p>
                 </div>
+                <button className="btn btn-black text-xs">Personnaliser</button>
             </div>
 
             <div>
                 <p className="font-normal text-2xl mb-4">Vos jeux préférés</p>
                 <ul className="flex-col-center-center gap-3">
                     <li className="hover:cursor-pointer flex-row-center-between w-full p-2 bg-purple-borders rounded-lg">
-                        Code Names
+                        Poker
                         <FontAwesomeIcon icon={faChevronRight} />
                     </li>
                     <li className="hover:cursor-pointer flex-row-center-between w-full p-2 bg-purple-borders rounded-lg">

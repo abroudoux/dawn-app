@@ -13,46 +13,46 @@ import hearstoneLogo from "../../../public/assets/heartstoneLogo.png"
 import pokemonLogo from "../../../public/assets/pokemonLogo.png"
 
 
-export default function Carousel() {
+const slidesData = [
+    {
+        title: "Uno",
+        logo: unoLogo,
+        players: "2-10 pers",
+        time: "+/- 30min"
+    },
+    {
+        title: "Loup Garou",
+        logo: loupGarouLogo,
+        players: "6-14 pers",
+        time: "+/- 30min"
+    },
+    {
+        title: "Code Names",
+        logo: codeNamesLogo,
+        players: "4-6 pers",
+        time: "10/15min"
+    },
+    {
+        title: "Blanc Manger Coco",
+        logo: bmcLogo,
+        players: "3-10 pers",
+        time: "+/- 30min"
+    },
+    {
+        title: "Heartstone",
+        logo: hearstoneLogo,
+        players: "2 pers",
+        time: "20min"
+    },
+    {
+        title: "Pokemon",
+        logo: pokemonLogo,
+        players: "2 pers",
+        time: "20min"
+    },
+];
 
-    const slidesData = [
-        {
-            title: "Uno",
-            logo: unoLogo,
-            players: "2-10 pers",
-            time: "+/- 30min"
-        },
-        {
-            title: "Loup Garou",
-            logo: loupGarouLogo,
-            players: "6-14 pers",
-            time: "+/- 30min"
-        },
-        {
-            title: "Code Names",
-            logo: codeNamesLogo,
-            players: "4-6 pers",
-            time: "10/15min"
-        },
-        {
-            title: "Blanc Manger Coco",
-            logo: bmcLogo,
-            players: "3-10 pers",
-            time: "+/- 30min"
-        },
-        {
-            title: "Heartstone",
-            logo: hearstoneLogo,
-            players: "2 pers",
-            time: "20min"
-        },
-        {
-            title: "Pokemon",
-            logo: pokemonLogo,
-            players: "2 pers",
-            time: "20min"
-        },
-    ];
+export default function Carousel() {
 
     const [currentIndex, setCurrentIndex] = useState(0);
 
