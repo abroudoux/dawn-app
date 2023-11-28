@@ -1,4 +1,5 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
@@ -7,6 +8,9 @@ import Slides from "./Slides";
 import unoLogo from "../../../public/assets/unoLogo.png";
 import loupGarouLogo from "../../../public/assets/loupGarouLogo.png";
 import codeNamesLogo from "../../../public/assets/codeNamesLogo.png";
+import bmcLogo from "../../../public/assets/bmcLogo.png";
+import hearstoneLogo from "../../../public/assets/heartstoneLogo.png"
+import pokemonLogo from "../../../public/assets/pokemonLogo.png"
 
 
 export default function Carousel() {
@@ -29,6 +33,24 @@ export default function Carousel() {
             logo: codeNamesLogo,
             players: "4-6 pers",
             time: "10/15min"
+        },
+        {
+            title: "Blanc Manger Coco",
+            logo: bmcLogo,
+            players: "3-10 pers",
+            time: "+/- 30min"
+        },
+        {
+            title: "Heartstone",
+            logo: hearstoneLogo,
+            players: "2 pers",
+            time: "20min"
+        },
+        {
+            title: "Pokemon",
+            logo: pokemonLogo,
+            players: "2 pers",
+            time: "20min"
         },
     ];
 
@@ -54,7 +76,7 @@ export default function Carousel() {
                 <FontAwesomeIcon className="w-8 h-8" icon={faChevronRight} onClick={nextSlide} />
             </div>
             <div className="w-full flex-row-center-center my-5">
-                <button className="btn-white">Choisir</button>
+                <Link to="/customization" className="btn-white">Choisir</Link>
             </div>
         </section>
     );

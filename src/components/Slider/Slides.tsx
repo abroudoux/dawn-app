@@ -16,7 +16,7 @@ const Slides : FC<SlidesProps> = ( props ) => {
         <div className="border-white border-[0.5px] rounded-lg w-[500px] h-auto bg-red flex-col-center-center overflow-hidden">
             <p className="text-3xl mt-12 font-semibold">{ props.title }</p>
             <div className="transition-transform ease-out duration-500">
-                <img src={ props.logo } className="w-auto" />
+                <img src={ props.logo } className="h-56 w-auto" />
             </div>
             <div className="w-2/4 flex-row-center-between text-lg mb-12 mt-6">
                 <div className="flex-col-center-center gap-2">
